@@ -1,6 +1,12 @@
-def multiplication(a,b):
-    return(value_b*value_a)
-value_a = int(input("Enter value a"))
-value_b= int(input("Enter value B"))
-answer=multiplication(value_a,value_b)
-print(answer)
+name_withoutnametag=input("Enter name witout tagline- ")
+if len(name_withoutnametag)>=3 and len(name_withoutnametag)<=16:
+    pass
+else:
+    print("enter a valid name")
+    quit()
+taglineonly=input("Enter your tagline the #- ")
+if len(taglineonly)>=3 and len(taglineonly)<=5:
+    pass
+else:
+    print("Please enter a valid tagline")
+    quit()
