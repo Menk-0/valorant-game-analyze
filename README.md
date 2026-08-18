@@ -1,2 +1,2 @@
-using a venv with-
-pip3 install requests
+No videcoding done
+Creating this project for study purposes using json requests venv python-dotenv
