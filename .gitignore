@@ -1,7 +1,6 @@
 .env
 .venv/
 my_matches.json
-matches.json
-deathmatches.json
-compe.json
+deathmatch.json
+competitive.json
 unrated.json
