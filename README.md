@@ -1,2 +1,1 @@
-No videcoding done
-still updating
+use your own api key from henrikdev if you want to use this project
