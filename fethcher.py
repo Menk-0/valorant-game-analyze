@@ -1,9 +1,11 @@
 import requests
 import json
-import os
-import sys
+
+
 from dotenv import load_dotenv
 load_dotenv()
+
+import os
 key=os.getenv("apikey")
 
 name_withoutnametag=input("Enter name witout tagline- ") #taking the name in without the tagline
