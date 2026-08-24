@@ -45,7 +45,7 @@ else:
 
 import cleaner
 
-cleanervar=input("Choose what mode to separate or say create a json for\n Unrated\n Competitive \n Deathmatch\nothers").lower()
+cleanervar=input("Choose what mode to separate or say create a json for with the same spelling\n Unrated\n Competitive \n Deathmatch\nothers").lower()
 
 if hasattr(cleaner, cleanervar):
     torun=getattr(cleaner, cleanervar)
