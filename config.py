@@ -16,3 +16,4 @@ if os.path.exists("user.json"):
 
 if NAME==None and TAG==None and REGION==None:
     print("run main .py and start over the variables are not setup")
+    quit()

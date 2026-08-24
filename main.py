@@ -36,9 +36,20 @@ if not os.path.exists("user.json"):
         json.dump(user_data,file,indent=4)
     import config
 else:
-    print("User already exist if want to re enter identity delete user.json moving onto fetching")
+    print("User already exist if want to re enter identity delete user.json moving onto fetching\n")
 
 if not os.path.exist("my_matches.json"):
     import fethcher
 else:
     print("Data for user already exist moving onto cleaner")
+
+import cleaner
+
+cleanervar=input("Choose what mode to separate or say create a json for\n Unrated\n Competitive \n Deathmatch\nothers").lower()
+
+if hasattr(cleaner, cleanervar):
+    torun=getattr(cleaner, cleanervar)
+    torun()
+    print(f"Ran {cleanervar} cleaner successfully\n")
+else:
+    print("Enter a valid argument from given")

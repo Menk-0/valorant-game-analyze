@@ -17,6 +17,7 @@ if response.status_code == 200:
     match_data = response.json()
     with open('my_matches.json', 'w') as file:
         json.dump(match_data, file, indent=4)
-    print("\nExtraction is comeplete")
+    print("\nExtraction is comeplete\n")
 else:
     print(f"Failed to connect, Error code: {response.status_code}")
+    quit()
