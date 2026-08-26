@@ -3,8 +3,10 @@ import os
 import json
 
 checkregion=["kr","ap","na","eu"]
+if not os.path.exists("json_files"):
+    os.makedirs("json_files")
 
-if not os.path.exists("user.json"):
+if not os.path.exists("json_files/user.json"):
     
     namein=input("Enter name without tag- ")
     if len(namein)>=3 and len(namein)<=16:
@@ -32,14 +34,14 @@ if not os.path.exists("user.json"):
     "REGION":regionin
     }
 
-    with open("user.json", "w") as file:
+    with open("json_files/user.json", "w") as file:
         json.dump(user_data,file,indent=4)
     import config
 else:
     print("\nUser already exist if want to re enter identity delete user.json moving onto fetching\n")
 
-if not os.path.exists("my_matches.json"):
-    import fethcher
+if not os.path.exists("json_files/my_matches.json"):
+    import json_work.fethcher as fethcher
 else:
     print("Data for user already exist moving onto cleaner\n")
 
@@ -49,8 +51,8 @@ else:
 
 # cleanervar=input("Choose what mode to separate or say create a json for with the same spelling\n Unrated\n Competitive \n Deathmatch\n others\n").lower()
 
-# if hasattr(cleaner, cleanervar):
-#     torun=getattr(cleaner, cleanervar)
+# if hasattr(json_work.cleaner, cleanervar):
+#     torun=getattr(json_work.cleaner, cleanervar)
 #     torun()
 #     print(f"Ran {cleanervar} cleaner successfully\n")
 # else:
@@ -59,4 +61,4 @@ else:
 
 print("\nCreating separate directories for player and others in player.json and otherplayer.json respectively\n")
 
-import playerseparater
+import json_work.playerseparater as playerseparater

@@ -5,8 +5,8 @@ NAME=None
 TAG=None
 REGION=None
 
-if os.path.exists("user.json"):
-    with open("user.json") as file:
+if os.path.exists("json_files/user.json"):
+    with open("json_files/user.json") as file:
         data=json.load(file)
         NAME=data["NAME"]
         TAG=data["TAG"]

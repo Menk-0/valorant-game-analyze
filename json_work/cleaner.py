@@ -6,7 +6,7 @@ with open("my_matches.json",'r') as file:
 needed_matches=[]
 
 def unrated():
-     if not os.path.exist("unrated.json"):
+     if not os.path.exist("json_files/unrated.json"):
           for matches in loader["data"]:
                if matches["metadata"]["mode"]=="Unrated":
                     needed_matches.append(matches)
