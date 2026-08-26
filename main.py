@@ -43,17 +43,20 @@ if not os.path.exists("my_matches.json"):
 else:
     print("Data for user already exist moving onto cleaner\n")
 
+#temporarily in thinking
 
-import cleaner
+# import cleaner
 
-cleanervar=input("Choose what mode to separate or say create a json for with the same spelling\n Unrated\n Competitive \n Deathmatch\n others\n").lower()
+# cleanervar=input("Choose what mode to separate or say create a json for with the same spelling\n Unrated\n Competitive \n Deathmatch\n others\n").lower()
 
-if hasattr(cleaner, cleanervar):
-    torun=getattr(cleaner, cleanervar)
-    torun()
-    print(f"Ran {cleanervar} cleaner successfully\n")
-else:
-    print("Enter a valid argument from given")
-    quit()
+# if hasattr(cleaner, cleanervar):
+#     torun=getattr(cleaner, cleanervar)
+#     torun()
+#     print(f"Ran {cleanervar} cleaner successfully\n")
+# else:
+#     print("Enter a valid argument from given")
+#     quit()
 
 print("\nCreating separate directories for player and others in player.json and otherplayer.json respectively\n")
+
+import playerseparater
