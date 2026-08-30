@@ -62,3 +62,5 @@ else:
 print("\nCreating separate directories for player and others in player.json and otherplayer.json respectively\n")
 
 import json_work.playerseparater as playerseparater
+
+#import json_work.analyzer as analyzer
