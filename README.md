@@ -1,3 +1,8 @@
+
+Things to do-
+Learn pandas and apply it
+Fix the playerseparator as it does not separate properly
+
 use your own api key from henrikdev if you want to use this project
 
 things done till now-
