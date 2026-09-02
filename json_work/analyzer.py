@@ -11,5 +11,3 @@ with open("json_files/otherplayerseparated.json") as file2:
 player=pd.DataFrame(my_matches)
 
 other_players=pd.DataFrame(other_mathes)
-
-print(player)
